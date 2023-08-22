@@ -706,7 +706,7 @@ def snappy_read_block(decoder):
 
 
 try:
-    import snappy
+    from cramjam import snappy
 except ImportError:
     BLOCK_READERS["snappy"] = missing_codec_lib("snappy", "python-snappy")
 else:

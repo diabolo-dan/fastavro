@@ -19,7 +19,7 @@ from glob import iglob
 data_dir = join(abspath(dirname(__file__)), "avro-files")
 
 try:
-    import snappy  # NOQA
+    from cramjam import snappy  # NOQA
 
     has_snappy = True
 except ImportError:

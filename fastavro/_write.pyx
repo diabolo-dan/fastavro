@@ -535,7 +535,7 @@ def _missing_dependency(codec, library):
 
 
 try:
-    import snappy
+    from cramjam import snappy
 except ImportError:
     BLOCK_WRITERS["snappy"] = _missing_dependency("snappy", "python-snappy")
 

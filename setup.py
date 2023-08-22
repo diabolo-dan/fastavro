@@ -73,8 +73,8 @@ setup(
     ],
     python_requires=">=3.8",
     extras_require={
-        "codecs": ["python-snappy", "zstandard", "lz4"],
-        "snappy": ["python-snappy"],
+        "codecs": ["cramjam", "zstandard", "lz4"],
+        "snappy": ["cramjam"],
         "zstandard": ["zstandard"],
         "lz4": ["lz4"],
     },

@@ -387,7 +387,7 @@ def snappy_write_block(encoder, block_bytes, compression_level):
 
 
 try:
-    import snappy
+    from cramjam import snappy
 except ImportError:
     BLOCK_WRITERS["snappy"] = _missing_codec_lib("snappy", "python-snappy")
 else:
